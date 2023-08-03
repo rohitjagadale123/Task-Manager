@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <form id="task-form">
+            <!-- Input fields for task details -->
+            <input type="text" id="task-name" placeholder="Task Name">
+            <input type="text" id="task-description" placeholder="Task Description">
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="task-list">
+            <!-- Display tasks here -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
